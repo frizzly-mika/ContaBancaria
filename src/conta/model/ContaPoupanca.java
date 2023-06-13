@@ -1,7 +1,7 @@
 package conta.model;
 
-public class ContaPoupanca extends Conta{
-	
+public class ContaPoupanca extends Conta {
+
 	private int aniversário;
 
 	public ContaPoupanca(int numero, int agencia, int tipo, String titular, float saldo, int aniversário) {
@@ -20,9 +20,7 @@ public class ContaPoupanca extends Conta{
 	@Override
 	public void visualizar() {
 		super.visualizar();
-		System.out.println("    |     Aniversário da conta: " + this.aniversário + "               |    ");
+		System.out.println("    |     Aniversário da conta: " + this.aniversário);
 	}
-	
-	
 
 }

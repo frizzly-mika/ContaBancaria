@@ -84,23 +84,18 @@ public abstract class Conta {
 			break;
 		}
 
-		System.out.println(Cores.TEXT_BLACK + Cores.ANSI_BLUE_BACKGROUND
-				+ "                                                      ");
+		System.out.println(Cores.TEXT_BLACK + "");
 		System.out.println("       ________________________________________       ");
-		System.out.println(Cores.TEXT_BLUE_BRIGHT + Cores.ANSI_BLUE_BACKGROUND + "     ♦                  "
-				+ Cores.TEXT_RED_BRIGHT + Cores.ANSI_BLUE_BACKGROUND + "                        ♦     "
+		System.out.println(Cores.TEXT_BLUE_BRIGHT + "     ♦                  " + Cores.TEXT_RED_BRIGHT
+				+ "                        ♦" + Cores.TEXT_BLACK);
+		System.out.println("    |                " + Cores.TEXT_BLACK_BOLD + "Dados da conta" + Cores.TEXT_RESET
 				+ Cores.TEXT_BLACK);
-		System.out.println("    |                " + Cores.TEXT_BLACK_BOLD +
-				"Dados da conta" + Cores.TEXT_RESET + Cores.ANSI_BLUE_BACKGROUND + 
-										   Cores.TEXT_BLACK + "              |    ");
-		System.out.println("    |____________________________________________|    ");
-		System.out.println(Cores.TEXT_BLACK + Cores.ANSI_BLUE_BACKGROUND
-						 + "    |                                            |    ");
-		System.out.println("    |     Numero da conta: " + this.numero + "                     |    ");
-		System.out.println("    |     Agência: " + this.agencia + "                           |    ");
-		System.out.println("    |     Tipo da conta: " + tipo + "          |    ");
-		System.out.println("    |     Titular: " + this.titular + "                       |    ");
-		System.out.println("    |     Saldo: " + this.saldo + "                         |    ");
-
+		System.out.println("    |__________________________________________");
+		System.out.println(Cores.TEXT_BLACK + "    |");
+		System.out.println("    |     Numero da conta: " + this.numero);
+		System.out.println("    |     Agência: " + this.agencia);
+		System.out.println("    |     Tipo da conta: " + tipo);
+		System.out.println("    |     Titular: " + this.titular);
+		System.out.println("    |     Saldo: " + this.saldo);
 	}
 }
